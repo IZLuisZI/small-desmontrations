@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+  </head>
+  <body class="h-screen bg-purple-200 font-work-sans">
+    <div class="bg-desktop-pattern h-1/4 bg-cover"></div>
+    <div class="flex justify-center">
+      <article
+        class="2xl:w-1/3 md:w-3/4 bg-white -translate-y-1/3 p-14 rounded-3xl shadow-xl"
+      >
+        <h1 class="text-7xl flex font-bold align-middle text-purple-800 pb-12">
+          <img
+            class="inline h-12 self-center mr-4"
+            src="assets/images/icon-star.svg"
+            alt=""
+          />FAQs
+        </h1>
+        <div>
+          <div
+            data-attribute=""
+            class="py-8 cursor-pointer relative after:content-none before:absolute before:bottom-0 before:h-px before:w-full before:bg-gray-400 before:bg-opacity-20"
+          >
+            <h2
+              class="flex justify-between font-bold text-2xl text-custom-color"
+            >
+              What is Frontend Mentor, and how will it help me?
+              <img src="./assets/images/icon-plus.svg" alt="" />
+            </h2>
+            <div data-des="des" class="hidden">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects in
+              HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+              for portfolio building.
+            </div>
+          </div>
+          <div
+            data-attribute="question"
+            class="py-8 cursor-pointer relative after:content-none before:absolute before:bottom-0 before:h-px before:w-full before:bg-gray-400 before:bg-opacity-20"
+          >
+            <h2
+              class="flex justify-between font-bold text-2xl text-custom-color"
+            >
+              Is Frontend Mentor free?
+              <img src="./assets/images/icon-plus.svg" alt="" />
+            </h2>
+            <div class="hidden">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects in
+              HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+              for portfolio building.
+            </div>
+          </div>
+          <div
+            data-attribute="question"
+            class="py-8 cursor-pointer relative after:content-none before:absolute before:bottom-0 before:h-px before:w-full before:bg-gray-400 before:bg-opacity-20"
+          >
+            <h2
+              class="flex justify-between font-bold text-xl text-custom-color"
+            >
+              Can I use Frontend Mentor projects in my portfolio?
+              <img src="./assets/images/icon-plus.svg" alt="" />
+            </h2>
+            <div class="hidden">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects in
+              HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+              for portfolio building.
+            </div>
+          </div>
+          <div
+            data-attribute="question"
+            class="py-8 cursor-pointer relative after:content-none before:absolute before:bottom-0 before:h-px before:w-full before:bg-gray-400 before:bg-opacity-20"
+          >
+            <h2
+              class="flex break-words justify-between font-bold text-xl text-custom-color"
+            >
+              How can I get help if I'm stuck on a Frontend Mentor challenge?
+              <img src="./assets/images/icon-plus.svg" alt="" />
+            </h2>
+            <div class="hidden">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects in
+              HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+              for portfolio building.
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

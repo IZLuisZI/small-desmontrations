@@ -1,0 +1,60 @@
+@media (max-width: 1199px) {
+  section {
+    width: 95%;
+  }
+  .projects {
+    flex-wrap: wrap;
+  }
+  .photo {
+    height: fit-content;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 900px) {
+  #grid-temp {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20vh;
+  }
+  .me > p,
+  .me > h2,
+  .span-2 {
+    text-align: center;
+  }
+
+  .grid-col-span {
+    grid-column: span 4;
+  }
+  .more-photo {
+    grid-column: span 4;
+    width: 100% !important;
+  }
+  .grid-col-span1 {
+    grid-column: span 4;
+  }
+  nav {
+    display: none;
+  }
+  header,
+  .footer-nav {
+    justify-content: flex-end;
+  }
+  .container-experience-qualities {
+    flex-wrap: wrap;
+  }
+  .container-experience-front {
+    width: 100%;
+  }
+  .projects > div {
+    width: 100%;
+  }
+  #ham {
+    visibility: visible;
+  }
+  .faq-wrap {
+    width: 90%;
+  }
+}

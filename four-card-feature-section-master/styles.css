@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  height: fit-content;
+}
+.main-wrapper {
+  width: 75%;
+  padding: 5rem;
+  margin: 2rem 0;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1500px) {
+  .main-info {
+    padding: 2rem 5rem !important;
+  }
+  .main-wrapper {
+    width: 90%;
+  }
+  .card-container {
+    /* Replace gap with margins */
+    flex-direction: column;
+  }
+  .card,
+  .out {
+    width: 100% !important;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-wrapper {
+    padding: 1rem;
+  }
+  .main-info {
+    padding: 0.2rem !important;
+    margin-top: 3rem;
+  }
+  .rel {
+    font-size: 2rem !important;
+    font-weight: 200 !important;
+  }
+  h1 {
+    font-size: 2rem !important;
+  }
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 15rem;
+}
+.main-info > * {
+  margin-bottom: 1rem;
+}
+.rel {
+  font-size: 2rem;
+  color: hsl(234, 12%, 34%);
+  font-weight: 500;
+  font-size: 3rem;
+}
+p {
+  color: hsl(0, 0%, 65%);
+  font-weight: 100;
+}
+h1 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.out {
+  width: calc(100% / 3);
+}
+.card {
+  position: relative;
+
+  height: 300px;
+  padding: 2rem;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.both {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+h2 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.card:nth-child(1),
+.card:nth-child(3) {
+  align-self: center;
+}
+.card p {
+  font-weight: 500;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+#calc::before {
+  background-color: aqua;
+}
+#super::before {
+  background-color: hsl(212, 86%, 64%);
+}
+#team::before {
+  background-color: hsl(0, 78%, 62%);
+}
+#karma::before {
+  background-color: hsl(34, 97%, 64%);
+}
+
+img {
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+}

@@ -1,0 +1,24 @@
+{
+  "users": [
+    { "name": "Luis Soriano", "handle": "LuisX" },
+    { "name": "Rodrygo Goes", "handle": "Rodrygo" },
+    { "name": "Fortnite", "handle": "Fortnite" },
+    { "name": "John Doe", "handle": "johndoe" },
+    { "name": "Jane Smith", "handle": "janesmith" },
+    { "name": "Alice Johnson", "handle": "alicej" },
+    { "name": "Bob Thompson", "handle": "bobt" },
+    { "name": "Emily Davis", "handle": "emilyd" },
+    { "name": "Michael Wilson", "handle": "michaelw" },
+    { "name": "Sophia Brown", "handle": "sophiab" },
+    { "name": "Daniel Martinez", "handle": "danielm" },
+    { "name": "Olivia Taylor", "handle": "oliviat" },
+    { "name": "Matthew Anderson", "handle": "matthewa" },
+    { "name": "Ava Thomas", "handle": "avat" },
+    { "name": "David Garcia", "handle": "davidg" },
+    { "name": "Emma Hernandez", "handle": "emmah" },
+    { "name": "James Clark", "handle": "jamesc" },
+    { "name": "Mia Lewis", "handle": "mial" },
+    { "name": "Benjamin Walker", "handle": "benjaminw" },
+    { "name": "Charlotte Green", "handle": "charlotteg" }
+  ]
+}

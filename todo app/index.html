@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="todo-wrapper border">
+      <div class="list">
+        <div class="list-items">
+          <h1>Your To-do list for today:</h1>
+          <!-- ADD IT HERE-->
+        </div>
+        <div class="add-item">
+          <input
+            class="border"
+            id="add-task"
+            type="text"
+            placeholder="Add Task..."
+          />
+          <button class="border" id="submit">Add to your To-do</button>
+          <button id="task-done" class="border">Show Tasks done</button>
+          <div id="alert" class="alert border">
+            <p>Please enter a task</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="background"></div>
+    <div id="done">
+      <h2 style="font-size: 3.5rem">List of task done</h2>
+      <ol id="numTaskDone"></ol>
+    </div>
+  </body>
+</html>

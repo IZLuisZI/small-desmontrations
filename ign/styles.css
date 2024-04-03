@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  height: fit-content;
+}
+.gray {
+  color: rgb(86, 86, 86);
+}
+.black {
+  color: black;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  max-width: 100%;
+}
+
+aside > img {
+  margin: 3rem 3rem 3rem 0;
+}
+a aside > * {
+  display: block;
+}
+.center {
+  text-align: center;
+}
+.upgrade {
+  padding: 2rem;
+
+  font-size: 1.3rem;
+  padding: 2rem;
+}
+.border {
+  border: 1px solid rgb(193, 193, 193);
+  border-radius: 1rem;
+}
+.upgrade--header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  vertical-align: center;
+}
+
+.upgrade > p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.upgrade button {
+  width: 100%;
+  padding: 1.5rem;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.list-items > ul {
+  list-style-type: none;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.list-items > ul > li {
+  padding: 1rem;
+}
+.list-items > ul > li:hover {
+  background-color: rgb(217, 217, 217);
+  border-radius: 1rem;
+}
+li > img,
+.game-options img,
+.game-user-options img {
+  vertical-align: bottom;
+  float: right;
+  height: 2.3rem;
+  cursor: pointer;
+}
+
+li > span > img {
+  height: 2rem;
+  width: 2rem;
+  vertical-align: bottom;
+  margin-right: 0.5rem;
+}
+.join {
+  margin-top: auto;
+}
+
+.join > button,
+#close {
+  padding: 1.5rem;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  background-color: #181c25;
+  border-radius: 1rem;
+}
+aside {
+  height: 100vh;
+  width: 12vw;
+  min-width: 20rem; /* This is the min-width you want to keep */
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding: 2rem;
+  left: 0;
+
+  box-shadow: 1px 0 5px -2px #888;
+  z-index: 2;
+}
+
+#page {
+  margin-left: calc(max(12vw, 20rem));
+  width: calc(100% - max(12vw, 20rem));
+
+  box-shadow: inset 0 200px 90px -3px #888;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+header {
+  width: 75%;
+  padding: 5rem;
+  box-shadow: 0 3px 9px -2px #888;
+
+  background-color: white;
+  border-radius: 2rem;
+}
+header > ul {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+header > ul > li {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 3rem;
+
+  margin-bottom: 3rem;
+}
+
+header > ul::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  background-color: #e1e1e1;
+}
+header > ul > li:hover {
+  background-color: rgb(232, 232, 232);
+  font-weight: bolder;
+}
+
+/*main */
+
+main,
+footer {
+  padding: 0 40rem;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-tools {
+  width: fit-content;
+  margin-left: auto;
+}
+
+.search-tools > select {
+  width: 20rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+.search-tools > input {
+  padding: 1rem;
+}
+
+.games-show-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 4rem;
+  gap: 3rem;
+}
+.games-show-container > div {
+  min-width: 15rem;
+  width: 25rem;
+  height: fit-content;
+}
+.game-img {
+  position: relative;
+}
+
+.more-about-game-container {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.4rem;
+  background-color: black;
+  padding: 0.2rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.glow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glow:hover {
+  background-color: rgba(255, 255, 255, 0.202);
+}
+.game-img > a > img,
+.game-img > img,
+.glow {
+  border-radius: 2rem;
+}
+.games-show-container > div > p {
+  padding-top: 0.5rem;
+}
+.games-show-container > div > p > img {
+  height: 2rem;
+  margin-right: 0.3rem;
+}
+
+h4 {
+  font-size: 1.65rem;
+}
+.hide {
+  display: none;
+}
+
+.announcement {
+  font-size: 1.5rem;
+}
+.unreal {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* pop up*/
+.game-about-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.467);
+  backdrop-filter: blur(2rem);
+  z-index: 999;
+}
+.game-about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: fixed;
+
+  width: 330px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2rem;
+  padding: 2.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.game-options > div,
+.game-user-options div {
+  position: relative;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+.game-options > div::after,
+.game-user-options div::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+
+  background-color: rgba(159, 159, 159, 0.257);
+}
+footer {
+  margin-top: 10rem;
+}
+footer ul {
+  display: flex;
+}
+.ign-more-about {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 3rem;
+}
+.ign-more-about::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 0;
+  background-color: #e1e1e1;
+}
+footer img {
+  height: 3rem;
+  width: 9rem;
+  margin-right: 3rem;
+}
+.ign-more-about ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.ign-more-about ul li {
+  font-size: 1.36rem;
+  padding: 0 1.5rem 1rem 0;
+}
+.ign-more-about ul li:nth-child(1) {
+  list-style: none;
+}
+@media screen and (max-width: 1700px) {
+  main,
+  footer {
+    padding: 0 10rem;
+  }
+  .search-tools {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
